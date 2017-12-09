@@ -10,6 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //Explicit
+    var nameString: String = ""
+    
+    
+    @IBOutlet weak var myTextField: UITextField!
+    
+    
+    
+    @IBAction func clickAction(_ sender: Any) {
+        nameString = myTextField.text!
+        
+        print("nameString >> \(nameString)")
+        // Show logcat
+        
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

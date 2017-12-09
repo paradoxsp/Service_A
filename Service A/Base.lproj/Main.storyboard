@@ -39,7 +39,12 @@
                                     <constraint firstAttribute="width" constant="125" id="YNI-eI-Lu4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="dw6-CV-O6H"/>
                                 </constraints>
-                                <state key="normal" title="OK"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="1" green="0.52434275320000001" blue="0.051192394039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQ5-o0-ITA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,6 +62,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myTextField" destination="dru-W5-Mo5" id="jtF-jE-Rjf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
