@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Easy_Authen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Zoodle-Ratatouille_3864-1024x800.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fbn-fB-cmG">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_construction-danger-equipment-roadblock-warning_2017842.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-LU-Gdy">
+                                <rect key="frame" x="112" y="20" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QHH-jt-uQa"/>
+                                    <constraint firstAttribute="width" constant="150" id="zT4-QE-cfQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_account_box_48pt.png" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-fp-q10">
+                                <rect key="frame" x="16" y="184" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_lock_open_48pt.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEy-Yq-uUO">
+                                <rect key="frame" x="16" y="234" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-wP-EOE">
+                                <rect key="frame" x="64" y="190" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQv-yf-5gw">
+                                <rect key="frame" x="64" y="251" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCO-ya-IxI">
+                                <rect key="frame" x="64" y="347" width="247" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-ww-77p">
+                                <rect key="frame" x="64" y="298" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.098567033678756522" green="0.061554270947894216" blue="0.032490793031691521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="0.98684799420000002" blue="0.96469400059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.98223213142119037" blue="0.95384927739655934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPT-mm-lkq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hbt-LU-Gdy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gtu-FQ-lkl"/>
+                            <constraint firstItem="fbn-fB-cmG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O9B-hh-gUc"/>
+                            <constraint firstItem="fbn-fB-cmG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p53-8B-eIN"/>
+                            <constraint firstItem="fbn-fB-cmG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qi1-dM-XxG"/>
+                            <constraint firstItem="fbn-fB-cmG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vOE-UY-hAo"/>
+                            <constraint firstItem="Hbt-LU-Gdy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xEc-Yr-bAp"/>
+                            <constraint firstItem="fbn-fB-cmG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zek-dc-bIy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="displayTextField" destination="oCO-ya-IxI" id="42q-9b-5Aw"/>
+                        <outlet property="passwordTextField" destination="hQv-yf-5gw" id="ppg-Ew-msU"/>
+                        <outlet property="userTextField" destination="b5g-wP-EOE" id="gqQ-f2-YCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Zoodle-Ratatouille_3864-1024x800.jpg" width="1024" height="800"/>
+        <image name="ic_account_box_48pt.png" width="48" height="48"/>
+        <image name="ic_lock_open_48pt.png" width="48" height="48"/>
+        <image name="if_construction-danger-equipment-roadblock-warning_2017842.png" width="256" height="256"/>
+    </resources>
 </document>
